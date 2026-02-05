@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KhyberSol is a leading digital agency specializing in web development, app development, UI/UX design, and AI automation. We craft exceptional digital experiences that transform businesses.">
+    <link rel="canonical" href="{{ url()->current() }}">
     <title>KhyberSol | Digital Solutions that Transform Businesses</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}">
@@ -247,7 +250,7 @@
                     <p class="text-white/40 text-[10px] leading-relaxed font-light mb-8">
                         High-converting websites, e-commerce stores, and custom web applications.
                     </p>
-                    <a href="{{ route('services') }}#web-dev"
+                    <a href="{{ route('services.web-development') }}"
                         class="inline-flex items-center gap-2 text-[10px] text-white/20 group-hover:text-white transition-colors uppercase tracking-widest font-bold">
                         Details <span>→</span>
                     </a>
@@ -269,7 +272,7 @@
                     <p class="text-white/40 text-[10px] leading-relaxed font-light mb-8">
                         Native and cross-platform mobile apps for iOS and Android devices.
                     </p>
-                    <a href="{{ route('services') }}#app-dev"
+                    <a href="{{ route('services.app-development') }}"
                         class="inline-flex items-center gap-2 text-[10px] text-white/20 group-hover:text-white transition-colors uppercase tracking-widest font-bold">
                         Details <span>→</span>
                     </a>
@@ -291,7 +294,7 @@
                     <p class="text-white/40 text-[10px] leading-relaxed font-light mb-8">
                         User-centric design that delivers intuitive and beautiful interfaces.
                     </p>
-                    <a href="{{ route('services') }}#uiux"
+                    <a href="{{ route('services.ui-ux-design') }}"
                         class="inline-flex items-center gap-2 text-[10px] text-white/20 group-hover:text-white transition-colors uppercase tracking-widest font-bold">
                         Details <span>→</span>
                     </a>
@@ -313,7 +316,7 @@
                     <p class="text-white/40 text-[10px] leading-relaxed font-light mb-8">
                         Intelligent chatbots and automated workflows to scale your business.
                     </p>
-                    <a href="{{ route('services') }}#ai"
+                    <a href="{{ route('services.ai-automation') }}"
                         class="inline-flex items-center gap-2 text-[10px] text-white/20 group-hover:text-white transition-colors uppercase tracking-widest font-bold">
                         Details <span>→</span>
                     </a>

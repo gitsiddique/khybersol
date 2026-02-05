@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with KhyberSol today. We'd love to discuss your next project and help your business grow with our digital expertise.">
+    <link rel="canonical" href="{{ url()->current() }}">
     <title>Contact Us | KhyberSol</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}">

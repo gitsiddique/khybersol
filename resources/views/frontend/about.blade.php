@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about KhyberSol, a digital agency dedicated to transforming ideas into impactful digital reality through strategic design and technical mastery.">
+    <link rel="canonical" href="{{ url()->current() }}">
     <title>About Us | KhyberSol Digital Agency</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}">

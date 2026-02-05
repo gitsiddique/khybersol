@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the comprehensive digital services offered by KhyberSol, including web development, app development, UI/UX design, AI automation, and more.">
+    <link rel="canonical" href="{{ url()->current() }}">
     <title>Our Services | KhyberSol</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}">
