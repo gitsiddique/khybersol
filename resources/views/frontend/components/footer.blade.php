@@ -65,6 +65,9 @@
                         <li><a href="{{ route('contact') }}"
                                 class="text-white/40 hover:text-primary text-sm transition-colors duration-300">Contact
                                 Us</a></li>
+                        <li><a href="{{ url('/login') }}"
+                                class="text-white/40 hover:text-primary text-sm transition-colors duration-300">Admin
+                                Dashboard</a></li>
                     </ul>
                 </div>
 

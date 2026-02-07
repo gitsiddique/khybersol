@@ -31,3 +31,14 @@ Route::prefix('services')->name('services.')->group(function () {
     Route::view('/graphic-branding', 'frontend.services.graphic-branding')->name('graphic-branding');
     Route::view('/ai-automation', 'frontend.services.ai-automation')->name('ai-automation');
 });
+
+// Admin Auth Routes
+use App\Http\Controllers\Admin\AuthController;
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::middleware(['auth'])->group(function () {
+    Route::view('/dashboard', 'backend.dashboard')->name('dashboard');
+});
