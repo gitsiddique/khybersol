@@ -1,0 +1,135 @@
+.ck-editor__editable {
+    min-height: 400px;
+    background-color: transparent !important;
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    background-color: #0A0A0A !important;
+}
+
+.ck.ck-toolbar {
+    background-color: #1A1A1A !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ck.ck-toolbar__button:hover,
+.ck.ck-dropdown__button:hover,
+.ck.ck-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ck.ck-toolbar__button:hover .ck-icon,
+.ck.ck-dropdown__button:hover .ck-icon,
+.ck.ck-button:hover .ck-icon {
+    color: #32f08b !important;
+}
+
+.ck.ck-toolbar__button.ck-on,
+.ck.ck-dropdown__button.ck-on,
+.ck.ck-button.ck-on {
+    background-color: rgba(50, 240, 139, 0.1) !important;
+    color: #32f08b !important;
+}
+
+.ck.ck-toolbar__button.ck-on .ck-icon,
+.ck.ck-dropdown__button.ck-on .ck-icon,
+.ck.ck-button.ck-on .ck-icon {
+    color: #32f08b !important;
+}
+
+.ck.ck-button {
+    color: white !important;
+    cursor: pointer !important;
+}
+
+.ck.ck-button .ck-icon {
+    color: white !important;
+}
+
+/* Fix for white dropdowns and text */
+.ck.ck-list,
+.ck.ck-dropdown__panel {
+    background-color: #1A1A1A !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ck.ck-list__item .ck-button:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.ck.ck-list__item .ck-button.ck-on {
+    background-color: rgba(50, 240, 139, 0.2) !important;
+    color: #32f08b !important;
+}
+
+.ck.ck-placeholder::before {
+    color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.ck.ck-button .ck-button__label {
+    color: inherit !important;
+}
+
+/* Content Styling inside Editor */
+.ck-editor__editable h1 {
+    font-size: 2em !important;
+    font-weight: bold !important;
+    margin-bottom: 0.5em !important;
+    color: white !important;
+    line-height: 1.2 !important;
+}
+
+.ck-editor__editable h2 {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+    margin-bottom: 0.5em !important;
+    color: white !important;
+    line-height: 1.3 !important;
+}
+
+.ck-editor__editable h3 {
+    font-size: 1.17em !important;
+    font-weight: bold !important;
+    margin-bottom: 0.5em !important;
+    color: white !important;
+    line-height: 1.4 !important;
+}
+
+.ck-editor__editable ul {
+    list-style-type: disc !important;
+    padding-left: 2em !important;
+    margin-bottom: 1em !important;
+}
+
+.ck-editor__editable ol {
+    list-style-type: decimal !important;
+    padding-left: 2em !important;
+    margin-bottom: 1em !important;
+}
+
+.ck-editor__editable li {
+    margin-bottom: 0.25em !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ck-editor__editable p {
+    margin-bottom: 1em !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ck-editor__editable blockquote {
+    border-left: 4px solid #32f08b !important;
+    padding-left: 1em !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-style: italic !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ck-editor__editable a {
+    color: #32f08b !important;
+    text-decoration: underline !important;
+}

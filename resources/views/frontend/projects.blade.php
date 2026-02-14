@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View the portfolio of KhyberSol, featuring case studies of digital excellence in web development, mobile apps, and design solutions.">
+    <meta name="description"
+        content="View the portfolio of KhyberSol, featuring case studies of digital excellence in web development, mobile apps, and design solutions.">
     <link rel="canonical" href="{{ url()->current() }}">
     <title>Our Projects | KhyberSol</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('frontend/imgs/fav.png') }}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="{{ asset('frontend/js/gsap.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/ScrollTrigger.min.js') }}"></script>
     <script>
         // Fallback in case GSAP fails to load
         setTimeout(() => {
@@ -23,19 +24,6 @@
                 }
             });
         }, 2000);
-    </script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#32f08b',
-                        dark: '#000000',
-                        card: '#111111',
-                    }
-                }
-            }
-        }
     </script>
 </head>
 

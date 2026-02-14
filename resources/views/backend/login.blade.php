@@ -5,22 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login | KhyberSol</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="icon" type="image/png" href="{{ asset('frontend/imgs/fav.png') }}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#32f08b',
-                        dark: '#000000',
-                        card: '#111111',
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="{{ asset('frontend/js/gsap.min.js') }}"></script>
     <style>
         .grid-bg {
             background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1px, transparent 0);

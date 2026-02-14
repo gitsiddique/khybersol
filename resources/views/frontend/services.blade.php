@@ -24,19 +24,6 @@
             });
         }, 2000);
     </script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#32f08b',
-                        dark: '#000000',
-                        card: '#111111',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
 <body class="grid-bg">

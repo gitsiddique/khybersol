@@ -8,24 +8,11 @@
         content="KhyberSol is a leading digital agency specializing in web development, app development, UI/UX design, and AI automation. We craft exceptional digital experiences that transform businesses.">
     <link rel="canonical" href="{{ url()->current() }}">
     <title>KhyberSol | Digital Solutions that Transform Businesses</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('frontend/css/styles.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('frontend/imgs/fav.png') }}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#32f08b',
-                        dark: '#000000',
-                        card: '#111111',
-                    }
-                }
-            }
-        }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body class="grid-bg">
@@ -40,7 +27,7 @@
         <!-- Video Background Overlay -->
         <div class="absolute inset-0 z-0">
             <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-40">
-                <source src="{{ asset('frontend/imgs/home-bg.mp4') }}" type="video/mp4">
+                <source src="{{ asset('frontend/imgs/home-bg.mp4') }}" type="video/mp4" media="(min-width: 768px)">
             </video>
             <!-- Dark Overlay to ensure text readability -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10"></div>

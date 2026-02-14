@@ -1,5 +1,5 @@
 <!-- Contact Form Section -->
-<section class="py-12 md:py-16 px-4 md:px-6 relative overflow-hidden">
+<section id="contact-section" class="py-12 md:py-16 px-4 md:px-6 relative overflow-hidden">
     <div class="max-w-6xl mx-auto relative z-10">
         <div
             class="bg-transparent border border-white/[0.05] rounded-[2.5rem] overflow-hidden backdrop-blur-xl shadow-2xl">
@@ -103,7 +103,14 @@
 
                 <!-- Right Side: The Form -->
                 <div class="lg:col-span-8 p-8 md:p-12">
-                    <form action="#" class="space-y-8">
+                    @if(session('success'))
+                        <div class="bg-primary/20 border border-primary text-white p-4 rounded-2xl mb-8">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    
+                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-8">
+                        @csrf
                         <div class="grid md:grid-cols-2 gap-8">
                             <!-- Name Field -->
                             <div class="group space-y-2">

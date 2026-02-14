@@ -29,38 +29,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Mobile Services Toggle
-                const servicesToggle = document.querySelector('#mobile-services-toggle');
-                const servicesMenu = document.querySelector('#mobile-services-menu');
-                
-                if (servicesToggle && servicesMenu) {
-                    servicesToggle.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        servicesToggle.classList.toggle('active');
-                        servicesMenu.classList.toggle('active');
-                    });
+        const servicesToggle = document.querySelector('#mobile-services-toggle');
+        const servicesMenu = document.querySelector('#mobile-services-menu');
+
+        if (servicesToggle && servicesMenu) {
+            servicesToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                servicesToggle.classList.toggle('active');
+                servicesMenu.classList.toggle('active');
+            });
+        }
+    }
+
+    // Set active nav link
+    const currentPath = window.location.pathname.split('/').pop() || 'index.shtml';
+    const navLinks = document.querySelectorAll('.nav-link, .menu-link, .mobile-submenu-link');
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+            // If it's a submenu link, also make parent menu active
+            if (link.classList.contains('mobile-submenu-link')) {
+                const submenu = link.closest('.mobile-submenu');
+                const toggle = document.querySelector('#mobile-services-toggle');
+                if (submenu && toggle) {
+                    submenu.classList.add('active');
+                    toggle.classList.add('active');
                 }
             }
-
-            // Set active nav link
-            const currentPath = window.location.pathname.split('/').pop() || 'index.shtml';
-            const navLinks = document.querySelectorAll('.nav-link, .menu-link, .mobile-submenu-link');
-            navLinks.forEach(link => {
-                const linkPath = link.getAttribute('href');
-                if (linkPath === currentPath) {
-                    link.classList.add('active');
-                    // If it's a submenu link, also make parent menu active
-                    if (link.classList.contains('mobile-submenu-link')) {
-                        const submenu = link.closest('.mobile-submenu');
-                        const toggle = document.querySelector('#mobile-services-toggle');
-                        if (submenu && toggle) {
-                            submenu.classList.add('active');
-                            toggle.classList.add('active');
-                        }
-                    }
-                } else {
-                    link.classList.remove('active');
-                }
-            });
+        } else {
+            link.classList.remove('active');
+        }
+    });
 
     // GSAP Animations
     if (typeof gsap !== 'undefined') {
@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
         tl.to(".hero-tag", { opacity: 1, y: 0, duration: 0.6 })
-          .to(".hero-title", { opacity: 1, y: 0, duration: 0.7 }, "-=0.4")
-          .to(".hero-description", { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
-          .to(".hero-actions", { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
-          .to(".hero-stats", { opacity: 1, y: 0, duration: 0.6 }, "-=0.5");
+            .to(".hero-title", { opacity: 1, y: 0, duration: 0.7 }, "-=0.4")
+            .to(".hero-description", { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
+            .to(".hero-actions", { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
+            .to(".hero-stats", { opacity: 1, y: 0, duration: 0.6 }, "-=0.5");
 
         // Floating Shapes Animation
         gsap.to(".shape-1", {

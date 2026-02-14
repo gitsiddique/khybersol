@@ -396,9 +396,6 @@ body {
     font-weight: 800;
     padding: 0.7rem 1.8rem;
     border-radius: 100px;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
