@@ -22,6 +22,7 @@
             });
         }, 2000);
     </script>
+    @include('frontend.components.google-analytics')
 </head>
 
 <body class="grid-bg">

@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="{{ asset('frontend/imgs/fav.png') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    @include('frontend.components.google-analytics')
 </head>
 
 <body class="bg-black text-white selection:bg-primary selection:text-black">
